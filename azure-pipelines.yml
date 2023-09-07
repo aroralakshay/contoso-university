@@ -40,4 +40,4 @@ steps:
       ContosoUniversity.Data/*.csproj
       ContosoUniversity.Spa.React/*.csproj
       ContosoUniversity.Web/*.csproj
-     arguments: '--configuration $(BuildConfiguration) -p:DeployOnBuild=true;WebPublishMethod=Package;PackageAsSingleFile=true;SkipInvalidConfigurations=true;DesktopBuildPackageLocation="$(build.artifactStagingDirectory)\WebApp.zip"'
+   
