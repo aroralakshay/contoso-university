@@ -21,9 +21,8 @@ steps:
   - task: UseDotNet@2
     displayName: 'Use .NET Core sdk'
     inputs:
-      packageType: sdk
-      version: '7.x'
-      installationPath: $(Agent.ToolsDirectory)/dotnet
+      packageType: 'sdk'
+      useGlobalJson: true
 
   - task: NuGetToolInstaller@1
 
