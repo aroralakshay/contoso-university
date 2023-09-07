@@ -6,19 +6,12 @@
 trigger: none
 pr: none
 
-schedules:
-  - cron: "0 */4 * * 1-5"
-    displayName: Every 4 hours Mon-Fri
-    branches:
-      include:
-        - master
-    always: true
 
 pool:
   vmImage: 'windows-latest'
 
 variables:
-  solution: '**/*.sln'
+  solution: 'contoso-university/*.sln'
   buildPlatform: 'Any CPU'
   buildConfiguration: 'Debug'
   NUGET_PACKAGES: $(Pipeline.Workspace)/.nuget/packages
