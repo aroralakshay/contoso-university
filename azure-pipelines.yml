@@ -46,7 +46,6 @@ steps:
     displayName: dotnet test
     inputs:
       command: test
-      arguments: '--no-restore --configuration $(BuildConfiguration) --verbosity normal --settings coverlet.runsettings --collect:"XPlat Code Coverage"'
       projects: |
        ContosoUniversity.Api.Tests/*.csproj
        ContosoUniversity.Data.Tests/*.csproj
